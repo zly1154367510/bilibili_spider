@@ -43,6 +43,7 @@ class BaseSpider(scrapy.Spider):
 
     def download_video(self,url):
         directory = self.base_config['video_local_dir']
+        print(directory)
         sys.argv = ['you-get','--format=flv360','-o', directory, url,]
         # sys.argv = ['you-get', '-i', url]
         you_get.main()

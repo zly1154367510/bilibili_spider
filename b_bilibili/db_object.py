@@ -7,7 +7,7 @@ class Video(Base):
     __tablename__ = 'video'
     id = Column(Integer, primary_key=True)
     type = Column(Integer)
-    creation_time = Column(String)
+    creation_time = Column(Integer)
     av_number = Column(String)
     title = Column(String)
     cover_loacl = Column(String)

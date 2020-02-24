@@ -49,7 +49,7 @@ class BaseSpider(scrapy.Spider):
                 title=i['title'],
                 type=self.type,
                 av_number='av%s' % (i['aid']),
-                cover_loacl=i['pic'],
+                cover_local=i['pic'],
                 video='',
                 video_download_url='https://www.bilibili.com/video/av%s' % (i['aid']),
                 creation_time=int(time.time())

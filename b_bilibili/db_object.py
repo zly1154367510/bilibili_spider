@@ -10,6 +10,6 @@ class Video(Base):
     creation_time = Column(Integer)
     av_number = Column(String)
     title = Column(String)
-    cover_loacl = Column(String)
+    cover_local = Column(String)
     video = Column(String)
     video_download_url = Column(String)
